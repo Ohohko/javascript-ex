@@ -16,3 +16,4 @@ function percentageOfWorld1(population) {
   const spain = percentageOfWorld2(10000);  
   const france = percentageOfWorld2(10000);
   const usa = percentageOfWorld2(10000);
+  
