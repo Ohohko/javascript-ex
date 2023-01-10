@@ -8,5 +8,3 @@ const populationPercentages = (popArray) => {
   }
   return percentages;
 }
-
-console.log(populationPercentages(population));
