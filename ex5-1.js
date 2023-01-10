@@ -3,7 +3,8 @@ function countryToLiveIn (language,isIsland,population,country) {
     {
         console.log("You should live in" + `${country}`);
     } else {
-        console.log("You should Not!!! live in" + `${country}`);
+        console.log(`${country}`+"does not meet your criteria");
+   
     }
 }
 
