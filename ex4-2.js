@@ -1,3 +1,4 @@
+let score = prompt('score?');
 const gradeAssigner = (score) => {
     if (score <= 64) {
         return "F";
@@ -12,4 +13,4 @@ const gradeAssigner = (score) => {
     }
 }
 
-console.log(`your score is ${gradeAssigner(100)}`);
+console.log(`your score is ${gradeAssigner(score)}`);
