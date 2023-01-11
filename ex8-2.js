@@ -4,6 +4,4 @@ const myCountry= {
     language:"En",
     population: 350000000,
     neighbors: ["Mexico"],
-
-
 }
