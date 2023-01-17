@@ -56,7 +56,7 @@ function showFirstAndLast(arr) {
 }
 
 function vowelCount(str) {
-  var vowels = 'aeiouAEIOU';
+  const vowels = 'aeiouAEIOU';
   return str.split('').reduce(function(acc, val) {
     if (vowels.indexOf(val) !== -1) {
       acc[val.toLowerCase()] = acc[val.toLowerCase()] + 1 || 1;
@@ -66,7 +66,7 @@ function vowelCount(str) {
 }
 
 function capitalize(str) {
-  var words = str.split(' ');
+  const words = str.split(' ');
   words.forEach(function(word, idx) {
     words[idx] = word[0].toUpperCase() + word.slice(1);
   });
@@ -74,9 +74,9 @@ function capitalize(str) {
 }
 
 function shiftLetters(str) {
-  var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
   return str.split('').map(function(val) {
-    var idx = alphabet.indexOf(val.toLowerCase());
+    let idx = alphabet.indexOf(val.toLowerCase());
     if (idx === -1) {
       return val;
     } else if (idx === 25) {
@@ -88,7 +88,7 @@ function shiftLetters(str) {
 }
 
 function swapCase(str) {
-  var words = str.split(' ');
+  const words = str.split(' ');
   words.forEach(function(word, idx) {
     if (idx % 2 === 0) {
       words[idx] = capitalize(word);
